@@ -1,7 +1,9 @@
 /* Dark mode */
+
 @media (prefers-color-scheme: dark) {
 
     /* General styling */
+
     body {
         background: var(--colors-spidertooth1000c);
         background-color: var(--colors-spidertooth1000c) !important;
@@ -18,6 +20,7 @@
     }
 
     /* Landing page styling */
+
     .c-lnROij {
         background-color: var(--colors-spidertooth800c);
     }
@@ -38,11 +41,13 @@
     }
 
     /* Login modal styling */
+    
     .c-hTVvBg {
         background-color: var(--colors-spidertooth800c);
     }
 
     /* Header styling */
+
     #__next>header>div>div>p {
         color: var(--colors-spidertooth000c);
     }
@@ -67,6 +72,7 @@
     }
 
     /* Sidebar styling */
+
     .c-fOFkuT {
         background-color: var(--colors-spidertooth1000c);
     }
@@ -85,6 +91,7 @@
     }
 
     /* Profile styling */
+
     .c-bITVNu {
         background-color: var(--colors-spidertooth800c);
     }
@@ -109,6 +116,7 @@
     }
 
     /* Post page styling */
+
     .c-GulhQ {
         background-color: var(--colors-spidertooth800c);
     }
@@ -123,6 +131,7 @@
     }
 
     /* Feed styling */
+
     .c-bvyfdZ-frHdsz-cv:hover,
     .c-bvyfdZ-frHdsz-cv:focus,
     .c-bvyfdZ-eIIZQy-cv:hover,
@@ -168,6 +177,7 @@
     }
 
     /* Balance dialog styling */
+
     .c-jvqXaZ {
         background-color: var(--colors-spidertooth1000c);
     }
@@ -188,6 +198,7 @@
     }
 
     /* Search styling */
+
     .c-fXyPqv {
         background-color: var(--colors-spidertooth800c);
     }
@@ -208,6 +219,7 @@
     }
 
     /* Composer page styling */
+
     .c-gkIwjq,
     .c-gkIwjq:hover,
     .c-gkIwjq:active {
@@ -223,6 +235,7 @@
     }
 
     /* Login page styling */
+
     .c-bZFocq {
         background-color: var(--colors-spidertooth1000c);
     }
