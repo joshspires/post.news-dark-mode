@@ -9,6 +9,16 @@ button {
     /* Display pointer for adding an image to post on a small screen */
 }
 
+.c-bITVNu {
+    border-radius: 0 0 2rem 2rem;
+    /* Adds rounded border to the bottom of the tablist on the profile page */
+}
+
+.c-bvyfdZ {
+    border-radius: 2rem;
+    /* Adds rounded border to the posts in the feed */
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 
