@@ -6,6 +6,10 @@
         background: var(--colors-spidertooth1000c);
         background-color: var(--colors-spidertooth1000c) !important;
     }
+    
+    a {
+        color: var(--colors-lifespirit300);
+    }
 
     svg {
         stroke: var(--colors-spidertooth000c);
@@ -69,7 +73,8 @@
     .c-jnGYto[data-state="active"],
     .c-hdSvyt,
     .c-jMcrAu,
-    .c-dNEurs {
+    .c-dNEurs,
+    .c-gbqkly {
         color: var(--colors-spidertooth000c);
     }
 
