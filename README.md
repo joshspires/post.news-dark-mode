@@ -19,6 +19,7 @@ There are also a number of non-theme related CSS fixes to improve the user exper
 ### Mobile
 1. N/A
 ## Post.news' variables
+### Colors
     --colors-currentColor: currentColor;
     --colors-spidertooth000c: #fff;
     --colors-spidertooth050c: #f7f7f8;
@@ -48,6 +49,7 @@ There are also a number of non-theme related CSS fixes to improve the user exper
     --colors-dixie400c: #E69216;
     --colors-dixie100: #FFF1DB;
     --colors-dixie400: #E69216;
+### Fonts
     --fonts-fontSans: Inter, sans-serif;
     --fonts-fontSerif: Source Serif Pro;
     --fonts-fontMonospace: monospace;
@@ -63,6 +65,7 @@ There are also a number of non-theme related CSS fixes to improve the user exper
     --fontWeights-fontMedium: 500;
     --fontWeights-fontSemiBold: 600;
     --fontWeights-fontBold: 700;
+### Heights & Spacings
     --lineHeights-leadingNone: 1;
     --lineHeights-leadingTighter: 1.15;
     --lineHeights-leadingTight: 1.25;
