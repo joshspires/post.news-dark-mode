@@ -29,7 +29,7 @@
     }
 
     #__next>header>div>ul>li.c-eBYgRj>a>div>span>img {
-        filter: invert(1)
+        filter: brightness(5)
     }
 
     .c-dbGOIS {
@@ -104,7 +104,7 @@
     }
 
     article>div.c-kHiOPw>button:nth-child(3)>span:nth-child(1)>img {
-        filter: invert(1)
+        filter: brightness(5)
     }
 
     /* Balance dialog styling */
