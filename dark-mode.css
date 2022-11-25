@@ -26,6 +26,15 @@
     .c-cZoNsg {
         background-image: radial-gradient(147.9% 80.4% at 50% 4.4%, #435485 0%, #5c7bd3 66.41%, #344c8f 100%);
     }
+    .c-FHWXc-iypSxu-hierarchy-SECONDARY {
+        border-color: var(--colors-spidertooth000c);
+        color: var(--colors-spidertooth000c);
+    }
+    
+    /* Login modal styling */
+    .c-hTVvBg {
+        background-color: var(--colors-spidertooth800c);
+    }
 
     /* Header styling */
     #__next>header>div>div>p {
@@ -191,6 +200,11 @@
     
     .c-gICkau, .c-lcfdHo, .c-jZGZAW {
         color: var(--colors-spidertooth000c);
+    }
+
+    /* Login page styling */
+    .c-bZFocq {
+        background-color: var(--colors-spidertooth1000c);
     }
 
 }
