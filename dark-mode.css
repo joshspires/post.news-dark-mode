@@ -239,5 +239,10 @@
     .c-bZFocq {
         background-color: var(--colors-spidertooth1000c);
     }
+    
+    /* Topics page styling */
+    .c-ljqKRC {
+        color: var(--colors-spidertooth000c);
+    }
 
 }
