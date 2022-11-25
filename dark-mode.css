@@ -64,7 +64,9 @@
 
     .c-gdrTBt,
     .c-iwkqjv,
-    .c-jnGYto[data-state="active"] {
+    .c-jnGYto[data-state="active"],
+    .c-hdSvyt,
+    .c-jMcrAu {
         color: var(--colors-spidertooth000c);
     }
 
@@ -84,7 +86,9 @@
     .c-bvyfdZ-frHdsz-cv:hover,
     .c-bvyfdZ-frHdsz-cv:focus,
     .c-bvyfdZ-eIIZQy-cv:hover,
-    .c-bvyfdZ-eIIZQy-cv:focus {
+    .c-bvyfdZ-eIIZQy-cv:focus, 
+    .c-foJpPP:hover, 
+    .c-foJpPP:focus {
         background-color: var(--colors-spidertooth700c)
     }
 
