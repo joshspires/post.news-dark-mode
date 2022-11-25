@@ -1,0 +1,10 @@
+<!-- Dark mode -->
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--colors-spidertooth800);
+  }
+  .c-iMmbuZ {
+    background-color: var(--colors-spidertooth1000c);
+      color: var(--colors-spidertooth000c);
+  }
+}
