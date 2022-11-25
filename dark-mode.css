@@ -1,4 +1,9 @@
 /* CSS Fixes - Random CSS related issue I've found while playing around */
+html {
+  overflow-y: scroll;
+    /* Fixes content shift issue when open modals and dialogs */
+}
+
 button {
     cursor: pointer;
     /* Displays pointer for all buttons */
