@@ -146,6 +146,10 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     .c-jnGYto {
         color: var(--colors-spidertooth400c);
     }
+  
+    .c-hxkEWD-ibfYWt-css {
+      border: 0.4rem solid var(--colors-spidertooth1000c);
+    }
 
     /* Post page styling */
     .c-GulhQ {
