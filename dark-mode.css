@@ -1,13 +1,29 @@
 <!-- Dark mode -->
 @media (prefers-color-scheme: dark) {
+  
+  /* Body styling */
   body {
-    background: var(--colors-spidertooth800);
+    background: var(--colors-spidertooth1000c);
   }
-  .c-iMmbuZ {
-    background-color: var(--colors-spidertooth1000c);
-      color: var(--colors-spidertooth000c);
-  }
+    
+  /* Header styling */
   #__next > header > div > div > p {
+    color: var(--colors-spidertooth1000c);
+  }
+  .c-iMmbuZ, .c-jaySyu {
+    background-color: var(--colors-spidertooth800);
     color: var(--colors-spidertooth000c);
-      }
+    border-bottom: 0.1rem solid var(--colors-spidertooth1000c);
+  }
+  
+  /* Profile styling */
+  .c-jaySyu, .c-bvyfdZ {
+    background-color: var(--colors-spidertooth800);
+  }
+  .c-dwcZjF, .c-dBPcrW, .c-gdrTBt, .c-hIRgvj, .c-dAqCK {
+    color: var(--colors-spidertooth000c);
+  }
+  .c-bvyfdZ-frHdsz-cv:hover, .c-bvyfdZ-frHdsz-cv:focus {
+    background-color: var(--colors-spidertooth700c)
+  }
 }
