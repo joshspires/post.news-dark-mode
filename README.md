@@ -3,4 +3,7 @@ Dark mode for post.news
 
 Currently a work in progess
 
-To be used with a CSS injector plugin for Chrome & Firefox. No mobile support at the moment.
+## Install steps
+1. Install the [Custom CSS by Denis](https://chrome.google.com/webstore/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) Chrome extension
+2. Copy the code from dark-mode.css
+3. Enjoy
