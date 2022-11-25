@@ -14,6 +14,11 @@ button {
     /* Display pointer for adding an image to post on a small screen */
 }
 
+#__next > main > div > div > div > div.c-jaySyu > div.c-eNYEDZ > a {
+    cursor: pointer;
+    /* Display pointer when interacting with the email button on profile pages */
+}
+
 .c-bITVNu {
     border-radius: 0 0 2rem 2rem;
     /* Adds rounded border to the bottom of the tablist on the profile page */
