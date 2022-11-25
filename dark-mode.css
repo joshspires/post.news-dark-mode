@@ -296,5 +296,12 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     .c-ljqKRC {
         color: var(--colors-spidertooth000c);
     }
+  
+    /* Comments styling - gets comments to a point where they are readable */
+    #__next > main > div > div > div > div > div {
+      background: var(--colors-spidertooth600);
+      border-radius: 2rem;
+      padding: 0 10px;
+  }
 
 }
