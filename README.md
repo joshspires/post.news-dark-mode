@@ -6,7 +6,7 @@ High contrast mode and other accessibility improvements will be coming soon.
 ## Install steps
 ### Desktop
 1. Install the [Custom CSS by Denis](https://chrome.google.com/webstore/detail/custom-css-by-denis/cemphncflepgmgfhcdegkbkekifodacd) Chrome extension
-2. Copy the code from dark-mode.css
+2. Copy the code from dark-mode.css into the Chrome extension
 3. Enjoy
 ### Mobile
 1. Coming soon
