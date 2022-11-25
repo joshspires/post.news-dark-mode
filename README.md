@@ -1,5 +1,7 @@
 # post.news-dark-mode
 Dark mode for post.news that follows the theme of your device. High contrast mode and other accessibility improvements will be coming soon.
+
+There are also a number of non-theme related CSS fixes to improve the user experience.
 ## Install steps
 ### Desktop
 #### Chrome & Edge
