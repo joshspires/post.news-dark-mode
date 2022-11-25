@@ -16,8 +16,13 @@
   #__next > header > div > div > p {
     color: var(--colors-spidertooth000c);
   }
+  
+  .c-ilLoxd {
+    background-color: var(--colors-spidertooth1000c);
+  }
+  
   .c-iMmbuZ, .c-jaySyu {
-    background-color: var(--colors-spidertooth1000);
+    background-color: var(--colors-spidertooth1000c);
     color: var(--colors-spidertooth000c);
     border-bottom: 0.1rem solid var(--colors-spidertooth1000c);
   }
