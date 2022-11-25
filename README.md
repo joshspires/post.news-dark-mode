@@ -18,7 +18,7 @@ There are also a number of non-theme related CSS fixes to improve the user exper
 5. Enjoy
 ### Mobile
 1. N/A
-## Post.news' variables
+## Post.news CSS variables
 ### Colors
     --colors-currentColor: currentColor;
     --colors-spidertooth000c: #fff;
