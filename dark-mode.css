@@ -7,4 +7,7 @@
     background-color: var(--colors-spidertooth1000c);
       color: var(--colors-spidertooth000c);
   }
+  #__next > header > div > div > p {
+    color: var(--colors-spidertooth000c);
+      }
 }
