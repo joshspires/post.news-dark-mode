@@ -14,9 +14,22 @@ button {
     /* Adds rounded border to the bottom of the tablist on the profile page */
 }
 
-.c-bvyfdZ {
+.c-bvyfdZ, .c-GulhQ {
     border-radius: 2rem;
-    /* Adds rounded border to the posts in the feed */
+    /* Adds rounded border to the posts in the feed and post page */
+}
+
+article > div.c-kHiOPw > button:nth-child(3) > span.c-kvkXDr {
+    display: none;
+    visibility: hidden;
+    /* Removes Tip text from Tip button on posts */
+}
+
+article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
+    stroke: var(--colors-starwind400c);
+    fill: var(--colors-starwind400c);
+    color: var(--colors-starwind400c);
+    /* Adds red thumbs up when a post is liked */
 }
 
 /* Dark mode */
@@ -186,6 +199,16 @@ button {
 
     article>div.c-kHiOPw>button:nth-child(3)>span:nth-child(1)>img {
         filter: brightness(5)
+    }
+    
+    article > div.c-kHiOPw > button:hover, article > div.c-fIaqhA > div > div.c-ibPCDO > button:hover {
+        border-radius: 4rem;
+        background-color: var(--colors-spidertooth800c);
+    }
+    
+    #__next > main > div > div > div > article > div.c-kHiOPw > button:hover {
+        border-radius: 4rem;
+        background-color: var(--colors-spidertooth700c);   
     }
 
     /* Balance dialog styling */
