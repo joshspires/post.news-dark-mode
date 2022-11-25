@@ -4,7 +4,7 @@
     /* General styling */
     body {
         background: var(--colors-spidertooth1000c);
-        background-color: var(--colors-spidertooth1000c) !important;
+        background-color: var(--colors-spidertooth1000c) !important; /* Used to override compose page background */
     }
     
     a {
@@ -89,11 +89,6 @@
     .c-kVuCiP, .c-fqZbpj .ProseMirror > p:not(.featuredAreaRepost *, .node-repostBlock *), .c-fqZbpj .node-promotionBlock, .c-fqZbpj .node-image, .c-fqZbpj .node-repostBlock, .c-fqZbpj .node-embedlyBlock:not(.featuredAreaRepost *, .node-repostBlock *) {
         color: var(--colors-spidertooth000c);
     }
-    
-    /* Comment styling */
-    [data-openweb-style-wrapper] .Typography__product-heading--11-3-11 {
-        color: var(--colors-spidertooth000c);
-    }
 
     /* Feed styling */
     .c-bvyfdZ-frHdsz-cv:hover,
@@ -175,5 +170,12 @@
     ::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder {
         color: var(--colors-spidertooth000c);
     }
-            
+
+    /* Compose page styling */
+    .c-gkIwjq, .c-gkIwjq:hover, .c-gkIwjq:active {
+        background: var(--colors-spidertooth800c);
+        color: var(--colors-spidertooth000c);
+        cursor: pointer;
+    }
+
 }
