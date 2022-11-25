@@ -23,6 +23,9 @@
     .c-cxwkcV, #__next > main > div > div > div > div > article > div.c-gDbqah > div > p, #__next > main > div > div > div > div > article > div.c-gDbqah > div > ul {
         color: var(--colors-spidertooth000c);
     }
+    .c-cZoNsg {
+        background-image: radial-gradient(147.9% 80.4% at 50% 4.4%, #435485 0%, #5c7bd3 66.41%, #344c8f 100%);
+    }
 
     /* Header styling */
     #__next>header>div>div>p {
