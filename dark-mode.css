@@ -171,11 +171,15 @@
         color: var(--colors-spidertooth000c);
     }
 
-    /* Compose page styling */
+    /* Composer page styling */
     .c-gkIwjq, .c-gkIwjq:hover, .c-gkIwjq:active {
         background: var(--colors-spidertooth800c);
         color: var(--colors-spidertooth000c);
         cursor: pointer;
+    }
+    
+    .c-gICkau, .c-lcfdHo {
+        color: var(--colors-spidertooth000c);
     }
 
 }
