@@ -263,6 +263,24 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     .c-jZGZAW {
         color: var(--colors-spidertooth000c);
     }
+    
+    .c-cvBxmq {
+        color: var(--colors-spidertooth000c);
+    }
+    
+    .c-FHWXc-zPonf-hierarchy-PRIMARY_LIGHT {
+        background-color: var(--colors-spidertooth800c);
+        color: var(--colors-spidertooth000c);
+    }
+    
+    .c-hOvNzj {
+        background-color: var(--colors-spidertooth800c);
+        border-bottom: 0.1rem var(--colors-spidertooth800c) solid;
+    }
+    
+    .c-dOFLJs {
+        background-color: var(--colors-spidertooth800c);
+    }
 
     /* Login page styling */
     .c-bZFocq {
