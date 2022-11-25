@@ -155,6 +155,10 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     .c-hxkEWD-ibfYWt-css {
       border: 0.4rem solid var(--colors-spidertooth1000c);
     }
+  
+    img[src="/svgs/twitterInactive.svg"], img[src="/svgs/facebookInactive.svg"], img[src="/svgs/instagramInactive.svg"], img[src="/svgs/linkedinInactive.svg"], img[src="/svgs/tikTokInactive.svg"], img[src="/svgs/substackInactive.svg"], img[src="/svgs/youtubeInactive.svg"], img[src="/svgs/mailInactive.svg"], img[src="/svgs/webInactive.svg"] {
+      filter: invert(1)
+    }
 
     /* Post page styling */
     .c-GulhQ {
