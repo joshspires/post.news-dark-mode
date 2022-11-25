@@ -98,9 +98,27 @@
     .c-dwcZjF,
     .c-bOkSyh,
     .c-dAqCK,
-    .c-jfPATj {
+    .c-jfPATj,
+    .c-TZEZD {
         color: var(--colors-spidertooth000c);
         }
+    }
+
+    .c-TZEZD::before {
+        background-color: var(--colors-spidertooth000c);
+    }
+    
+
+    .c-foFVYh {
+      background-color: var(--colors-spidertooth1000c); 
+    }
+    
+    .c-hbaUTP {
+        color: var(--colors-spidertooth000c);
+    }
+    
+    .c-hbaUTP-gmqXFB-warn-true {
+        color: red;
     }
 
     article>div.c-kHiOPw>button:nth-child(3)>span:nth-child(1)>img {
