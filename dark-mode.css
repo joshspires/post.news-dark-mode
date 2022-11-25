@@ -1,9 +1,18 @@
-/* Dark mode */
+/* CSS Fixes - Random CSS related issue I've found while playing around */
+button {
+    cursor: pointer;
+    /* Displays pointer for all buttons */
+}
 
+.c-gkIwjq {
+    cursor: pointer;
+    /* Display pointer for adding an image to post on a small screen */
+}
+
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
 
     /* General styling */
-
     body {
         background: var(--colors-spidertooth1000c);
         background-color: var(--colors-spidertooth1000c) !important;
@@ -18,9 +27,8 @@
         stroke: var(--colors-spidertooth000c);
         color: var(--colors-spidertooth000c);
     }
-    
-    /* Landing page styling */
 
+    /* Landing page styling */
     .c-lnROij {
         background-color: var(--colors-spidertooth800c);
     }
@@ -41,13 +49,11 @@
     }
 
     /* Login modal styling */
-    
     .c-hTVvBg {
         background-color: var(--colors-spidertooth800c);
     }
 
     /* Header styling */
-
     #__next>header>div>div>p {
         color: var(--colors-spidertooth000c);
     }
@@ -72,7 +78,6 @@
     }
 
     /* Sidebar styling */
-
     .c-fOFkuT {
         background-color: var(--colors-spidertooth1000c);
     }
@@ -91,7 +96,6 @@
     }
 
     /* Profile styling */
-
     .c-bITVNu {
         background-color: var(--colors-spidertooth800c);
     }
@@ -116,7 +120,6 @@
     }
 
     /* Post page styling */
-
     .c-GulhQ {
         background-color: var(--colors-spidertooth800c);
     }
@@ -131,7 +134,6 @@
     }
 
     /* Feed styling */
-
     .c-bvyfdZ-frHdsz-cv:hover,
     .c-bvyfdZ-frHdsz-cv:focus,
     .c-bvyfdZ-eIIZQy-cv:hover,
@@ -175,9 +177,8 @@
     article>div.c-kHiOPw>button:nth-child(3)>span:nth-child(1)>img {
         filter: brightness(5)
     }
-    
-    /* Balance dialog styling */
 
+    /* Balance dialog styling */
     .c-jvqXaZ {
         background-color: var(--colors-spidertooth1000c);
     }
@@ -192,13 +193,11 @@
     }
 
     /* Settings styling */
-
     .c-hyymYW {
         color: var(--colors-spidertooth000c);
     }
 
     /* Search styling */
-
     .c-fXyPqv {
         background-color: var(--colors-spidertooth800c);
     }
@@ -219,13 +218,11 @@
     }
 
     /* Composer page styling */
-
     .c-gkIwjq,
     .c-gkIwjq:hover,
     .c-gkIwjq:active {
         background: var(--colors-spidertooth800c);
         color: var(--colors-spidertooth000c);
-        cursor: pointer;
     }
 
     .c-gICkau,
@@ -235,11 +232,10 @@
     }
 
     /* Login page styling */
-
     .c-bZFocq {
         background-color: var(--colors-spidertooth1000c);
     }
-    
+
     /* Topics page styling */
     .c-ljqKRC {
         color: var(--colors-spidertooth000c);
