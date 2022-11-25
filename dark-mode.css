@@ -15,6 +15,14 @@
         stroke: var(--colors-spidertooth000c);
         color: var(--colors-spidertooth000c);
     }
+    
+    /* Landing page styling */
+    .c-lnROij {
+        background-color: var(--colors-spidertooth800c);
+    }
+    .c-cxwkcV, #__next > main > div > div > div > div > article > div.c-gDbqah > div > p, #__next > main > div > div > div > div > article > div.c-gDbqah > div > ul {
+        color: var(--colors-spidertooth000c);
+    }
 
     /* Header styling */
     #__next>header>div>div>p {
