@@ -4,6 +4,7 @@
   /* General styling */
   body {
     background: var(--colors-spidertooth1000c);
+    background-color: var(--colors-spidertooth1000c)!important;
   }
   svg {
     stroke: var(--colors-spidertooth000c);
