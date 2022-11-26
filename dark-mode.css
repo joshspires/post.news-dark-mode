@@ -39,7 +39,7 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     stroke: var(--colors-lifespirit400);
     fill: var(--colors-lifespirit400);
     color: var(--colors-lifespirit400);
-    /* Adds red thumbs up when a post is liked */
+    /* Adds blue filled thumbs up when a post is liked */
 }
 
 /* Dark mode */
