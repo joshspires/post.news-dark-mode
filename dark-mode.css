@@ -159,6 +159,10 @@ article > div.c-kHiOPw > button.c-bOkSyh.c-bOkSyh-eGcsjJ-liked-true > svg {
     img[src="/svgs/twitterInactive.svg"], img[src="/svgs/facebookInactive.svg"], img[src="/svgs/instagramInactive.svg"], img[src="/svgs/linkedinInactive.svg"], img[src="/svgs/tikTokInactive.svg"], img[src="/svgs/substackInactive.svg"], img[src="/svgs/youtubeInactive.svg"], img[src="/svgs/mailInactive.svg"], img[src="/svgs/webInactive.svg"] {
       filter: invert(1)
     }
+  
+    #__next > main > div > div > div > div.ptr__children > div.c-fSoVva > div.c-jaySyu > div.c-iNeJhE > div.c-jpYNHp > button.c-OOpzv > span > img {
+      filter: brightness(5)
+    }
 
     /* Post page styling */
     .c-GulhQ {
