@@ -1,4 +1,5 @@
 # post.news-dark-mode
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 Dark mode for post.news that follows the theme of your device. High contrast mode and other accessibility improvements will be coming soon.
 
 This uses CSS variables from [post.news](post.news)' code.
