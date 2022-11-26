@@ -17,4 +17,6 @@ There are also a number of non-theme related CSS fixes to improve the user exper
 4. Hit save
 5. Enjoy
 ### Mobile
-1. N/A
+## Android
+Head over to my other repo, which utlises Chrome's extensions to add dark mode to Android-based mobile devices - [post.news-dark-mode
+-chrome-extension](https://github.com/joshspires/post.news-dark-mode-chrome-extension)
