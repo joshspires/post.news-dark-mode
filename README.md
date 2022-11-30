@@ -1,3 +1,9 @@
+## Development has moved
+*Chrome extension - [https://github.com/joshspires/post.news-dark-mode-chrome-extension](https://github.com/joshspires/post.news-dark-mode-chrome-extension)
+*Firefox extension - [https://github.com/joshspires/post.news-dark-mode-firefox-extension](https://github.com/joshspires/post.news-dark-mode-firefox-extension)
+*Safari extension - [https://github.com/joshspires/post.news-dark-mode-safari-extension](https://github.com/joshspires/post.news-dark-mode-safari-extension)
+
+
 # post.news-dark-mode
 Dark mode for post.news that follows the theme of your device. High contrast mode and other accessibility improvements will be coming soon.
 
