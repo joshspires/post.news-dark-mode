@@ -1,7 +1,7 @@
 ## Development has moved
-*Chrome extension - [https://github.com/joshspires/post.news-dark-mode-chrome-extension](https://github.com/joshspires/post.news-dark-mode-chrome-extension)
-*Firefox extension - [https://github.com/joshspires/post.news-dark-mode-firefox-extension](https://github.com/joshspires/post.news-dark-mode-firefox-extension)
-*Safari extension - [https://github.com/joshspires/post.news-dark-mode-safari-extension](https://github.com/joshspires/post.news-dark-mode-safari-extension)
+- Chrome extension - [https://github.com/joshspires/post.news-dark-mode-chrome-extension](https://github.com/joshspires/post.news-dark-mode-chrome-extension)
+- Firefox extension - [https://github.com/joshspires/post.news-dark-mode-firefox-extension](https://github.com/joshspires/post.news-dark-mode-firefox-extension)
+- Safari extension - [https://github.com/joshspires/post.news-dark-mode-safari-extension](https://github.com/joshspires/post.news-dark-mode-safari-extension)
 
 
 # post.news-dark-mode
