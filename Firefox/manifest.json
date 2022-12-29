@@ -1,0 +1,24 @@
+{
+    "name": "Post.news Dark Mode",
+    "author": "Joshua Spires",
+    "description": "Tun the lights off while using Post.news",
+    "version": "1.2.8",
+    "manifest_version": 2,
+    "icons": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "96": "icons/96.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png" },
+      "default_icon": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "96": "icons/96.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png" },
+      "default_title": "Post.news dark mode",
+    "content_scripts": [{
+        "js": ["scripts/script.js"],
+        "matches": ["https://post.news/*"]
+      }]
+}
