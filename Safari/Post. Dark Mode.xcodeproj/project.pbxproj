@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F09FB66E2938BFC7004FFEA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB66D2938BFC7004FFEA5 /* AppDelegate.swift */; };
+		F09FB6702938BFC7004FFEA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB66F2938BFC7004FFEA5 /* SceneDelegate.swift */; };
+		F09FB6732938BFC7004FFEA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6712938BFC7004FFEA5 /* LaunchScreen.storyboard */; };
+		F09FB6762938BFC7004FFEA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6742938BFC7004FFEA5 /* Main.storyboard */; };
+		F09FB67F2938BFC8004FFEA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB67E2938BFC8004FFEA5 /* AppDelegate.swift */; };
+		F09FB6822938BFC8004FFEA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6802938BFC8004FFEA5 /* Main.storyboard */; };
+		F09FB6892938BFC8004FFEA5 /* Post. Dark Mode Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F09FB6882938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F09FB6932938BFC8004FFEA5 /* Post. Dark Mode Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F09FB6922938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F09FB6992938BFC8004FFEA5 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6542938BFC1004FFEA5 /* Main.html */; };
+		F09FB69A2938BFC8004FFEA5 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6542938BFC1004FFEA5 /* Main.html */; };
+		F09FB69B2938BFC8004FFEA5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6562938BFC1004FFEA5 /* Icon.png */; };
+		F09FB69C2938BFC8004FFEA5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6562938BFC1004FFEA5 /* Icon.png */; };
+		F09FB69D2938BFC8004FFEA5 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6572938BFC1004FFEA5 /* Style.css */; };
+		F09FB69E2938BFC8004FFEA5 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6572938BFC1004FFEA5 /* Style.css */; };
+		F09FB69F2938BFC8004FFEA5 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6582938BFC1004FFEA5 /* Script.js */; };
+		F09FB6A02938BFC8004FFEA5 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6582938BFC1004FFEA5 /* Script.js */; };
+		F09FB6A12938BFC8004FFEA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB6592938BFC1004FFEA5 /* ViewController.swift */; };
+		F09FB6A22938BFC8004FFEA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB6592938BFC1004FFEA5 /* ViewController.swift */; };
+		F09FB6A32938BFC8004FFEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65A2938BFC7004FFEA5 /* Assets.xcassets */; };
+		F09FB6A42938BFC8004FFEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65A2938BFC7004FFEA5 /* Assets.xcassets */; };
+		F09FB6A52938BFC8004FFEA5 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB65C2938BFC7004FFEA5 /* SafariWebExtensionHandler.swift */; };
+		F09FB6A62938BFC8004FFEA5 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FB65C2938BFC7004FFEA5 /* SafariWebExtensionHandler.swift */; };
+		F09FB6A72938BFC8004FFEA5 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65E2938BFC7004FFEA5 /* _locales */; };
+		F09FB6A82938BFC8004FFEA5 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65E2938BFC7004FFEA5 /* _locales */; };
+		F09FB6A92938BFC8004FFEA5 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65F2938BFC7004FFEA5 /* images */; };
+		F09FB6AA2938BFC8004FFEA5 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F09FB65F2938BFC7004FFEA5 /* images */; };
+		F09FB6AB2938BFC8004FFEA5 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6602938BFC7004FFEA5 /* manifest.json */; };
+		F09FB6AC2938BFC8004FFEA5 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6602938BFC7004FFEA5 /* manifest.json */; };
+		F09FB6AD2938BFC8004FFEA5 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6612938BFC7004FFEA5 /* background.js */; };
+		F09FB6AE2938BFC8004FFEA5 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6612938BFC7004FFEA5 /* background.js */; };
+		F09FB6AF2938BFC8004FFEA5 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6622938BFC7004FFEA5 /* content.js */; };
+		F09FB6B02938BFC8004FFEA5 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6622938BFC7004FFEA5 /* content.js */; };
+		F09FB6B12938BFC8004FFEA5 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6632938BFC7004FFEA5 /* popup.html */; };
+		F09FB6B22938BFC8004FFEA5 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6632938BFC7004FFEA5 /* popup.html */; };
+		F09FB6B32938BFC8004FFEA5 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6642938BFC7004FFEA5 /* popup.css */; };
+		F09FB6B42938BFC8004FFEA5 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6642938BFC7004FFEA5 /* popup.css */; };
+		F09FB6B52938BFC8004FFEA5 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6652938BFC7004FFEA5 /* popup.js */; };
+		F09FB6B62938BFC8004FFEA5 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = F09FB6652938BFC7004FFEA5 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F09FB68A2938BFC8004FFEA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09FB64E2938BFC0004FFEA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09FB6872938BFC8004FFEA5;
+			remoteInfo = "Post. Dark Mode Extension (iOS)";
+		};
+		F09FB6942938BFC8004FFEA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09FB64E2938BFC0004FFEA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09FB6912938BFC8004FFEA5;
+			remoteInfo = "Post. Dark Mode Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F09FB6BC2938BFC8004FFEA5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F09FB6892938BFC8004FFEA5 /* Post. Dark Mode Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6C32938BFC8004FFEA5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F09FB6932938BFC8004FFEA5 /* Post. Dark Mode Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F09FB6552938BFC1004FFEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		F09FB6562938BFC1004FFEA5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F09FB6572938BFC1004FFEA5 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F09FB6582938BFC1004FFEA5 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F09FB6592938BFC1004FFEA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F09FB65A2938BFC7004FFEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F09FB65C2938BFC7004FFEA5 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F09FB65E2938BFC7004FFEA5 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		F09FB65F2938BFC7004FFEA5 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		F09FB6602938BFC7004FFEA5 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		F09FB6612938BFC7004FFEA5 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		F09FB6622938BFC7004FFEA5 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		F09FB6632938BFC7004FFEA5 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		F09FB6642938BFC7004FFEA5 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		F09FB6652938BFC7004FFEA5 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		F09FB66A2938BFC7004FFEA5 /* Post. Dark Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post. Dark Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09FB66D2938BFC7004FFEA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F09FB66F2938BFC7004FFEA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F09FB6722938BFC7004FFEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F09FB6752938BFC7004FFEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F09FB6772938BFC7004FFEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09FB67C2938BFC8004FFEA5 /* Post. Dark Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post. Dark Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09FB67E2938BFC8004FFEA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F09FB6812938BFC8004FFEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F09FB6832938BFC8004FFEA5 /* Post. Dark Mode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Post. Dark Mode.entitlements"; sourceTree = "<group>"; };
+		F09FB6882938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Post. Dark Mode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09FB68D2938BFC8004FFEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09FB6922938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Post. Dark Mode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09FB6972938BFC8004FFEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09FB6982938BFC8004FFEA5 /* Post. Dark Mode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Post. Dark Mode.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F09FB6672938BFC7004FFEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6792938BFC8004FFEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6852938BFC8004FFEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB68F2938BFC8004FFEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F09FB64D2938BFC0004FFEA5 = {
+			isa = PBXGroup;
+			children = (
+				F09FB6522938BFC1004FFEA5 /* Shared (App) */,
+				F09FB65B2938BFC7004FFEA5 /* Shared (Extension) */,
+				F09FB66C2938BFC7004FFEA5 /* iOS (App) */,
+				F09FB67D2938BFC8004FFEA5 /* macOS (App) */,
+				F09FB68C2938BFC8004FFEA5 /* iOS (Extension) */,
+				F09FB6962938BFC8004FFEA5 /* macOS (Extension) */,
+				F09FB66B2938BFC7004FFEA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F09FB6522938BFC1004FFEA5 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB6592938BFC1004FFEA5 /* ViewController.swift */,
+				F09FB65A2938BFC7004FFEA5 /* Assets.xcassets */,
+				F09FB6532938BFC1004FFEA5 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		F09FB6532938BFC1004FFEA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB6542938BFC1004FFEA5 /* Main.html */,
+				F09FB6562938BFC1004FFEA5 /* Icon.png */,
+				F09FB6572938BFC1004FFEA5 /* Style.css */,
+				F09FB6582938BFC1004FFEA5 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F09FB65B2938BFC7004FFEA5 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB65C2938BFC7004FFEA5 /* SafariWebExtensionHandler.swift */,
+				F09FB65D2938BFC7004FFEA5 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		F09FB65D2938BFC7004FFEA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB65E2938BFC7004FFEA5 /* _locales */,
+				F09FB65F2938BFC7004FFEA5 /* images */,
+				F09FB6602938BFC7004FFEA5 /* manifest.json */,
+				F09FB6612938BFC7004FFEA5 /* background.js */,
+				F09FB6622938BFC7004FFEA5 /* content.js */,
+				F09FB6632938BFC7004FFEA5 /* popup.html */,
+				F09FB6642938BFC7004FFEA5 /* popup.css */,
+				F09FB6652938BFC7004FFEA5 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F09FB66B2938BFC7004FFEA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB66A2938BFC7004FFEA5 /* Post. Dark Mode.app */,
+				F09FB67C2938BFC8004FFEA5 /* Post. Dark Mode.app */,
+				F09FB6882938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */,
+				F09FB6922938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F09FB66C2938BFC7004FFEA5 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB66D2938BFC7004FFEA5 /* AppDelegate.swift */,
+				F09FB66F2938BFC7004FFEA5 /* SceneDelegate.swift */,
+				F09FB6712938BFC7004FFEA5 /* LaunchScreen.storyboard */,
+				F09FB6742938BFC7004FFEA5 /* Main.storyboard */,
+				F09FB6772938BFC7004FFEA5 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		F09FB67D2938BFC8004FFEA5 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB67E2938BFC8004FFEA5 /* AppDelegate.swift */,
+				F09FB6802938BFC8004FFEA5 /* Main.storyboard */,
+				F09FB6832938BFC8004FFEA5 /* Post. Dark Mode.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		F09FB68C2938BFC8004FFEA5 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB68D2938BFC8004FFEA5 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F09FB6962938BFC8004FFEA5 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F09FB6972938BFC8004FFEA5 /* Info.plist */,
+				F09FB6982938BFC8004FFEA5 /* Post. Dark Mode.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F09FB6692938BFC7004FFEA5 /* Post. Dark Mode (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09FB6BD2938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode (iOS)" */;
+			buildPhases = (
+				F09FB6662938BFC7004FFEA5 /* Sources */,
+				F09FB6672938BFC7004FFEA5 /* Frameworks */,
+				F09FB6682938BFC7004FFEA5 /* Resources */,
+				F09FB6BC2938BFC8004FFEA5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09FB68B2938BFC8004FFEA5 /* PBXTargetDependency */,
+			);
+			name = "Post. Dark Mode (iOS)";
+			productName = "Post. Dark Mode (iOS)";
+			productReference = F09FB66A2938BFC7004FFEA5 /* Post. Dark Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F09FB67B2938BFC8004FFEA5 /* Post. Dark Mode (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09FB6C42938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode (macOS)" */;
+			buildPhases = (
+				F09FB6782938BFC8004FFEA5 /* Sources */,
+				F09FB6792938BFC8004FFEA5 /* Frameworks */,
+				F09FB67A2938BFC8004FFEA5 /* Resources */,
+				F09FB6C32938BFC8004FFEA5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09FB6952938BFC8004FFEA5 /* PBXTargetDependency */,
+			);
+			name = "Post. Dark Mode (macOS)";
+			productName = "Post. Dark Mode (macOS)";
+			productReference = F09FB67C2938BFC8004FFEA5 /* Post. Dark Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F09FB6872938BFC8004FFEA5 /* Post. Dark Mode Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09FB6B92938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode Extension (iOS)" */;
+			buildPhases = (
+				F09FB6842938BFC8004FFEA5 /* Sources */,
+				F09FB6852938BFC8004FFEA5 /* Frameworks */,
+				F09FB6862938BFC8004FFEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Post. Dark Mode Extension (iOS)";
+			productName = "Post. Dark Mode Extension (iOS)";
+			productReference = F09FB6882938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F09FB6912938BFC8004FFEA5 /* Post. Dark Mode Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09FB6C02938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode Extension (macOS)" */;
+			buildPhases = (
+				F09FB68E2938BFC8004FFEA5 /* Sources */,
+				F09FB68F2938BFC8004FFEA5 /* Frameworks */,
+				F09FB6902938BFC8004FFEA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Post. Dark Mode Extension (macOS)";
+			productName = "Post. Dark Mode Extension (macOS)";
+			productReference = F09FB6922938BFC8004FFEA5 /* Post. Dark Mode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F09FB64E2938BFC0004FFEA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F09FB6692938BFC7004FFEA5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F09FB67B2938BFC8004FFEA5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F09FB6872938BFC8004FFEA5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F09FB6912938BFC8004FFEA5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = F09FB6512938BFC0004FFEA5 /* Build configuration list for PBXProject "Post. Dark Mode" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F09FB64D2938BFC0004FFEA5;
+			productRefGroup = F09FB66B2938BFC7004FFEA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F09FB6692938BFC7004FFEA5 /* Post. Dark Mode (iOS) */,
+				F09FB67B2938BFC8004FFEA5 /* Post. Dark Mode (macOS) */,
+				F09FB6872938BFC8004FFEA5 /* Post. Dark Mode Extension (iOS) */,
+				F09FB6912938BFC8004FFEA5 /* Post. Dark Mode Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F09FB6682938BFC7004FFEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB69B2938BFC8004FFEA5 /* Icon.png in Resources */,
+				F09FB6732938BFC7004FFEA5 /* LaunchScreen.storyboard in Resources */,
+				F09FB6992938BFC8004FFEA5 /* Main.html in Resources */,
+				F09FB69F2938BFC8004FFEA5 /* Script.js in Resources */,
+				F09FB6A32938BFC8004FFEA5 /* Assets.xcassets in Resources */,
+				F09FB6762938BFC7004FFEA5 /* Main.storyboard in Resources */,
+				F09FB69D2938BFC8004FFEA5 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB67A2938BFC8004FFEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB69C2938BFC8004FFEA5 /* Icon.png in Resources */,
+				F09FB69E2938BFC8004FFEA5 /* Style.css in Resources */,
+				F09FB6822938BFC8004FFEA5 /* Main.storyboard in Resources */,
+				F09FB6A02938BFC8004FFEA5 /* Script.js in Resources */,
+				F09FB6A42938BFC8004FFEA5 /* Assets.xcassets in Resources */,
+				F09FB69A2938BFC8004FFEA5 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6862938BFC8004FFEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6AD2938BFC8004FFEA5 /* background.js in Resources */,
+				F09FB6B32938BFC8004FFEA5 /* popup.css in Resources */,
+				F09FB6B12938BFC8004FFEA5 /* popup.html in Resources */,
+				F09FB6A92938BFC8004FFEA5 /* images in Resources */,
+				F09FB6AB2938BFC8004FFEA5 /* manifest.json in Resources */,
+				F09FB6A72938BFC8004FFEA5 /* _locales in Resources */,
+				F09FB6AF2938BFC8004FFEA5 /* content.js in Resources */,
+				F09FB6B52938BFC8004FFEA5 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6902938BFC8004FFEA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6AE2938BFC8004FFEA5 /* background.js in Resources */,
+				F09FB6B42938BFC8004FFEA5 /* popup.css in Resources */,
+				F09FB6B22938BFC8004FFEA5 /* popup.html in Resources */,
+				F09FB6AA2938BFC8004FFEA5 /* images in Resources */,
+				F09FB6AC2938BFC8004FFEA5 /* manifest.json in Resources */,
+				F09FB6A82938BFC8004FFEA5 /* _locales in Resources */,
+				F09FB6B02938BFC8004FFEA5 /* content.js in Resources */,
+				F09FB6B62938BFC8004FFEA5 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F09FB6662938BFC7004FFEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6A12938BFC8004FFEA5 /* ViewController.swift in Sources */,
+				F09FB66E2938BFC7004FFEA5 /* AppDelegate.swift in Sources */,
+				F09FB6702938BFC7004FFEA5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6782938BFC8004FFEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6A22938BFC8004FFEA5 /* ViewController.swift in Sources */,
+				F09FB67F2938BFC8004FFEA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB6842938BFC8004FFEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6A52938BFC8004FFEA5 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09FB68E2938BFC8004FFEA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09FB6A62938BFC8004FFEA5 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F09FB68B2938BFC8004FFEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09FB6872938BFC8004FFEA5 /* Post. Dark Mode Extension (iOS) */;
+			targetProxy = F09FB68A2938BFC8004FFEA5 /* PBXContainerItemProxy */;
+		};
+		F09FB6952938BFC8004FFEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09FB6912938BFC8004FFEA5 /* Post. Dark Mode Extension (macOS) */;
+			targetProxy = F09FB6942938BFC8004FFEA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F09FB6542938BFC1004FFEA5 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09FB6552938BFC1004FFEA5 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F09FB6712938BFC7004FFEA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09FB6722938BFC7004FFEA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F09FB6742938BFC7004FFEA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09FB6752938BFC7004FFEA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F09FB6802938BFC8004FFEA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09FB6812938BFC8004FFEA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F09FB6B72938BFC8004FFEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F09FB6B82938BFC8004FFEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F09FB6BA2938BFC8004FFEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode.Extension";
+				PRODUCT_NAME = "Post. Dark Mode Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F09FB6BB2938BFC8004FFEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode.Extension";
+				PRODUCT_NAME = "Post. Dark Mode Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F09FB6BE2938BFC8004FFEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode";
+				PRODUCT_NAME = "Post. Dark Mode";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F09FB6BF2938BFC8004FFEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode";
+				PRODUCT_NAME = "Post. Dark Mode";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F09FB6C12938BFC8004FFEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Post. Dark Mode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode.Extension";
+				PRODUCT_NAME = "Post. Dark Mode Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F09FB6C22938BFC8004FFEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Post. Dark Mode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode.Extension";
+				PRODUCT_NAME = "Post. Dark Mode Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F09FB6C52938BFC8004FFEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Post. Dark Mode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode";
+				PRODUCT_NAME = "Post. Dark Mode";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F09FB6C62938BFC8004FFEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Post. Dark Mode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJCG8D52WP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Post. Dark Mode";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Joshua-Spires.Post--Dark-Mode";
+				PRODUCT_NAME = "Post. Dark Mode";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F09FB6512938BFC0004FFEA5 /* Build configuration list for PBXProject "Post. Dark Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09FB6B72938BFC8004FFEA5 /* Debug */,
+				F09FB6B82938BFC8004FFEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09FB6B92938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09FB6BA2938BFC8004FFEA5 /* Debug */,
+				F09FB6BB2938BFC8004FFEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09FB6BD2938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09FB6BE2938BFC8004FFEA5 /* Debug */,
+				F09FB6BF2938BFC8004FFEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09FB6C02938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09FB6C12938BFC8004FFEA5 /* Debug */,
+				F09FB6C22938BFC8004FFEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09FB6C42938BFC8004FFEA5 /* Build configuration list for PBXNativeTarget "Post. Dark Mode (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09FB6C52938BFC8004FFEA5 /* Debug */,
+				F09FB6C62938BFC8004FFEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F09FB64E2938BFC0004FFEA5 /* Project object */;
+}
