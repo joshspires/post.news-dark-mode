@@ -380,4 +380,8 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
     .c-eKlmUN {
         border-bottom: 0.1rem solid var(--colors-spidertooth1000c);
     }
+
+    li::marker {
+        color: #ffffff;
+    }
 }
