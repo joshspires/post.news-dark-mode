@@ -2,7 +2,7 @@
     "name": "Post.news Dark Mode",
     "author": "Joshua Spires",
     "description": "Tun the lights off while using Post.news",
-    "version": "1.2.8",
+    "version": "1.2.9",
     "manifest_version": 2,
     "icons": {
       "16": "icons/16.png",
