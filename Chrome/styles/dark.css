@@ -133,7 +133,10 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
 }
 
 @media only screen and (max-width: 1134px) and (prefers-color-scheme: dark) {
-    .c-ilLoxd, .c-gHVokN, .c-cwekIR {
+
+    .c-ilLoxd,
+    .c-gHVokN,
+    .c-cwekIR {
         background-color: var(--colors-spidertooth800c) !important;
     }
 }
@@ -386,4 +389,11 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
     li::marker {
         color: #ffffff;
     }
+}
+
+.a-set {
+    position: fixed;
+    bottom: 5.6rem;
+    right: 1.6rem;
+    z-index: 99
 }
