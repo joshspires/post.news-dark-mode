@@ -1,42 +1,95 @@
-/* Quick Compose modal logic
+/* Settings modal code */
 window.onload = function () {
-    var modal = document.getElementById("quickcompose_modal");
-    var btn = document.getElementById("quickcompose");
-    var a = document.getElementsByClassName("close")[0];
-    var ifr = document.getElementById('qcm')[0];
 
-    btn.onclick = function () {
-        modal.style.display = "block";
+    var modal_s = document.getElementById("a-modal");
+    var btn_s = document.getElementById("a-set");
+    var a_s = document.getElementsByClassName("close")[0];
+
+    btn_s.onclick = function () {
+        modal_s.style.display = "block";
     }
 
-    a.onclick = function () {
-        modal.style.display = "none";
-        ifr.src = ifr.src;
+    a_s.onclick = function () {
+        modal_s.style.display = "none";
     }
 
     window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target == modal_s) {
+            modal_s.style.display = "none";
         }
     }
+
+    const html = document.querySelector("html")
+    const checkbox = document.querySelector("input[name=theme]")
+    const getStyle = (element, style) =>
+        window
+            .getComputedStyle(element)
+            .getPropertyValue(style);
+    const initialColors = {
+        bg: getStyle(html, "--bg"),
+        bga: getStyle(html, "--bga"),
+        bgh: getStyle(html, "--bgh"),
+        bgs: getStyle(html, "--colors-spidertooth000c"),
+        text: getStyle(html, "--text"),
+    }
+    const darkMode = {
+        bg: "#000000",
+        bga: "#323b4b",
+        bgh: "#1a2230",
+        text: "#ffffff",
+        bgs: "#000000",
+    }
+    const transformKey = key =>
+        "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
+    const changeColors = (colors) => {
+        Object.keys(colors).map(key =>
+            html.style.setProperty(transformKey(key), colors[key])
+        );
+    }
+    checkbox.addEventListener("change", ({ target }) => {
+        target.checked ? changeColors(darkMode) : changeColors(initialColors);
+    });
+    const isExistLocalStorage = (key) =>
+        localStorage.getItem(key) != null;
+    const createOrEditLocalStorage = (key, value) =>
+        localStorage.setItem(key, JSON.stringify(value));
+    const getValeuLocalStorage = (key) =>
+        JSON.parse(localStorage.getItem(key));
+    checkbox.addEventListener("change", ({ target }) => {
+        if (target.checked) {
+            changeColors(darkMode);
+            createOrEditLocalStorage('mode', 'darkMode');
+        } else {
+            changeColors(initialColors);
+            createOrEditLocalStorage('mode', 'initialColors');
+        }
+    })
+    if (!isExistLocalStorage('mode'))
+        createOrEditLocalStorage('mode', 'initialColors');
+    if (getValeuLocalStorage('mode') === "initialColors") {
+        checkbox.removeAttribute('checked');
+        changeColors(initialColors);
+    } else {
+        checkbox.setAttribute('checked', "");
+        changeColors(darkMode);
+    }
+
 }
 
-/* Quick Compose modal button
-const quickcompose = document.createElement('a');
-quickcompose.setAttribute("aria-label", "Compose a Post");
-quickcompose.setAttribute("class", "c-bVhrlL");
-quickcompose.setAttribute("id", "quickcompose");
-quickcompose.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--colors-spidertooth000)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>'
+const settings_btn = document.createElement('div');
+settings_btn.setAttribute("aria-label", "Accessibility settings");
+settings_btn.setAttribute("class", "a-set c-bVhrlL");
+settings_btn.setAttribute("id", "a-set");
+settings_btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>'
 
-document.body.appendChild(quickcompose);
+document.body.appendChild(settings_btn);
 
-/* Quick Compose modal
-const quickcompose_modal = document.createElement('div');
-quickcompose_modal.setAttribute("class", "modal");
-quickcompose_modal.setAttribute("id", "quickcompose_modal")
-quickcompose_modal.innerHTML = '<div class="modal-content"><a class="close">&times;</a><iframe id="qcm" style="min-width:500px;height:95%;" src="https://post.news/composer"></iframe></div>'
+const settings_modal = document.createElement('div');
+settings_modal.setAttribute("class", "a-modal modal");
+settings_modal.setAttribute("id", "a-modal")
+settings_modal.innerHTML = '<div class="modal-content"><a class="close">&times;</a><div class="inner-content"><h3>Accessibility settings</h3><div class="toggle">Dark Mode <input id="switch" type="checkbox" name="theme"><label for="switch">Dark Mode Toggle</label></div><br><div class="toggle">High Contrast Mode (coming soon) <input disabled id="switch-c" type="checkbox" name="contrast"><label for="switch-c">High Contrast Toggle</label></div><br><div class="toggle">Greyscale Mode (coming soon) <input disabled id="switch-g" type="checkbox" name="grey"><label for="switch-g">Greyscale Toggle</label></div></div></div>'
 
-document.body.appendChild(quickcompose_modal);
+document.body.appendChild(settings_modal);
 
 /* CSS inject */
 const style = document.createElement('style');
@@ -52,164 +105,46 @@ div.ptr__pull-down--pull-more>div>p {
     text-transform: capitalize;
 }
 
-button,
-.c-gkIwjq,
-.c-bqseKE,
-#__next>main>div>div>div>div.c-jaySyu>div.c-eNYEDZ>a,
-#__next>main>div>div>div>div.ptr__children>div.c-fSoVva>div.c-jaySyu>div.c-eNYEDZ>a>span>img {
-    cursor: pointer;
-}
+html {
+    --bg: #efeff2;
+    --bga: #ffffff;
+    --bgh: #f7f7f8;
+    --text: #000000;
+  }
 
-.c-bdPRaD {
-    min-width: 85px;
-}
+  body, .c-dVvJMv,
+  .c-hJLqTF-emnxNO-isTip-true,
+  .c-bZFocq,
+  .c-dnbfWL:hover,
+  .c-dnbfWL:focus,
+  .c-PJLV-dNuByD-type-FULL_HEIGHT,
+  .c-dbGOIS,
+  .c-foFVYh,
+  .c-jvqXaZ,
+  .c-ehkLfE-ihZJXZy-css,
+  .c-dcltaJ-gKdpob-type-FULL_HEIGHT,
+  .c-iQreDs  {
+    background-color: var(--bg)!important;
+  }
 
-[data-spotim-module]:not([data-ready="true"]) {
-    padding: 0 15px;
-}
-
-.ptr {
-    z-index: 99;
-}
-
-.c-gHVokN {
-    z-index: 1;
-}
-
-div[data-radix-popper-content-wrapper] {
-    z-index: 999 !important;
-}
-
-@media only screen and (min-width: 621px) {
-
-    .c-bvyfdZ,
-    .c-GulhQ,
-    .c-jYivmg {
-        border-radius: 1.5rem;
+  .c-bvyfdZ-frHdsz-cv:hover,
+    .c-bvyfdZ-frHdsz-cv:focus,
+    .c-bvyfdZ-eIIZQy-cv:hover,
+    .c-bvyfdZ-eIIZQy-cv:focus,
+    .c-foJpPP:hover,
+    .c-foJpPP:focus,
+    .c-jYivmg:hover,
+    .c-jYivmg:focus,
+    .c-PJLV-foJpPP-isGif-false:hover,
+    .c-PJLV-foJpPP-isGif-false:focus,
+    .c-gaARkn:hover,
+    .c-bqseKE-fassuZ-isActive-true,
+    .c-bqseKE:hover,
+    .c-hjFsWX:hover {
+        background-color: var(--bgh);
     }
 
-    .c-bITVNu {
-        border-radius: 0 0 1.5rem 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .modal-content {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media only screen and (min-width: 1135px) {
-    #__next>main>div>div>div>div.c-gHVokN {
-        top: 13.5rem;
-        max-width: 1135px;
-    }
-
-    #__next>main>div>div>div>div.c-gHVokN>div>div.c-cwekIR {
-        flex-direction: column;
-        max-width: 200px;
-        background-color: var(--colors-spidertooth800c) !important;
-        border-radius: 1.5rem;
-    }
-
-    #__next>main>div>div>div>div.c-gHVokN>div.c-ioOOaa {
-        margin-right: -350px;
-    }
-
-    #__next>main>div>div>div>div.c-gHVokN.c-gHVokN-fXbMiE-isOutOfView-true {
-        transform: translate(-50%, 0)
-    }
-
-    #__next>main>div>div>div>div.ptr {
-        margin-top: -18.5rem;
-    }
-
-    #__next>main>div>div>div>div>div.ptr__children {
-        margin-top: 20rem;
-    }
-}
-
-article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
-    stroke: var(--colors-lifespirit400);
-    fill: var(--colors-lifespirit400);
-    color: var(--colors-lifespirit400);
-}
-
-.c-bVhrlL {
-    z-index: 999;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-}
-
-.modal-content {
-    background-color: #000;
-    margin: auto;
-    padding: 20px;
-    border-radius: 1.5rem;
-    max-width: 545px;
-    height: 550px;
-}
-
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 1134px) and (prefers-color-scheme: dark) {
-    .c-ilLoxd, .c-gHVokN, .c-cwekIR {
-        background-color: var(--colors-spidertooth800c) !important;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-
-    .c-ilLoxd {
-        background-color: var(--colors-spidertooth1000c);
-    }
-
-    .c-dVvJMv,
-    .c-hJLqTF-emnxNO-isTip-true,
-    .c-bZFocq,
-    .c-dnbfWL:hover,
-    .c-dnbfWL:focus,
-    .c-PJLV-dNuByD-type-FULL_HEIGHT,
-    .c-dbGOIS,
-    .c-foFVYh,
-    .c-jvqXaZ,
-    .c-ehkLfE-ihZJXZy-css,
-    .c-dcltaJ-gKdpob-type-FULL_HEIGHT,
-    .c-cwekIR,
-    .c-iQreDs {
-        background-color: var(--colors-spidertooth1000c);
-    }
-
-    body {
-        background-color: var(--colors-spidertooth1000c) !important;
-    }
-
-    h1,
+  h1,
     h2,
     h3,
     h4,
@@ -259,21 +194,10 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
     .c-jfPATj,
     .c-fjcEhn,
     .c-TZEZD,
-    .c-gTXyln {
-        color: var(--colors-spidertooth000c)
-    }
-
-    .c-jWeVSF-fIcCkj-positive-true {
-        color: var(--colors-flutterleaf400c);
-    }
-
-    a {
-        color: #bacdff;
-    }
-
+    .c-gTXyln,
     svg {
-        stroke: var(--colors-spidertooth000c);
-        color: var(--colors-spidertooth000c);
+        color: var(--text);
+        stroke: var(--text);
     }
 
     .c-lnROij,
@@ -293,145 +217,168 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
     .c-bITVNu,
     .c-diTqIq-kdaqIN-isActive-true,
     .c-jNDCqQ,
-    .c-fOFkuT {
-        background-color: var(--colors-spidertooth800c);
-    }
-
-    .c-cZoNsg {
-        background-image: radial-gradient(147.9% 80.4% at 50% 4.4%, #435485 0%, #5c7bd3 66.41%, #344c8f 100%);
-    }
-
-    .c-FHWXc-iypSxu-hierarchy-SECONDARY {
-        border-color: var(--colors-spidertooth000c);
-        color: var(--colors-spidertooth000c);
-    }
-
-    .c-iMmbuZ,
+    .c-fOFkuT,
     .c-jaySyu,
-    .c-lkZNlx,
-    .c-hAHMGt-gKdpob-type-FULL_HEIGHT {
-        background-color: var(--colors-spidertooth1000c);
-        color: var(--colors-spidertooth000c);
-        border-bottom: 0.1rem solid var(--colors-spidertooth1000c);
+    .modal-content,
+    #__next>main>div>div>div>div.c-gHVokN>div>div.c-cwekIR {
+        background: var(--bga)
     }
 
-    #__next>header>div>ul>li.c-eBYgRj>a>div>span>img,
-    #__next>header>div>div>ul>div>div>span:nth-child(1)>button>span>img,
-    #__next>header>div>ul>li.c-ibzkWc>div>div>span:nth-child(1)>button>span>img {
-        filter: brightness(5)
+.c-bdPRaD {
+    min-width: 85px;
+}
+
+[data-spotim-module]:not([data-ready="true"]) {
+    padding: 0 15px;
+}
+
+.ptr {
+    z-index: 99;
+}
+
+.c-gHVokN {
+    z-index: 1;
+}
+
+div[data-radix-popper-content-wrapper] {
+    z-index: 999 !important;
+}
+
+@media only screen and (min-width: 621px) {
+
+    .c-bvyfdZ,
+    .c-GulhQ,
+    .c-jYivmg {
+        border-radius: 1.5rem;
     }
 
-    .c-jaySyu {
-        background-color: var(--colors-spidertooth800c);
-        border-bottom: 0.1rem solid var(--colors-spidertooth800c);
-    }
-
-    .c-jnGYto {
-        color: var(--colors-spidertooth400c);
-    }
-
-    .c-hxkEWD-ibfYWt-css {
-        border: 0.4rem solid var(--colors-spidertooth1000c);
-    }
-
-    img[src="/svgs/twitterInactive.svg"],
-    img[src="/svgs/facebookInactive.svg"],
-    img[src="/svgs/instagramInactive.svg"],
-    img[src="/svgs/linkedinInactive.svg"],
-    img[src="/svgs/tikTokInactive.svg"],
-    img[src="/svgs/mastodonInactive.svg"],
-    img[src="/svgs/redditInactive.svg"],
-    img[src="/svgs/substackInactive.svg"],
-    img[src="/svgs/youtubeInactive.svg"],
-    img[src="/svgs/mailInactive.svg"],
-    img[src="/svgs/webInactive.svg"] {
-        filter: invert(1)
-    }
-
-    #__next>main>div>div>div>div.ptr__children>div.c-fSoVva>div.c-jaySyu>div.c-iNeJhE>div.c-jpYNHp>button.c-OOpzv>span>img {
-        filter: brightness(5)
-    }
-
-    .c-bvyfdZ-frHdsz-cv:hover,
-    .c-bvyfdZ-frHdsz-cv:focus,
-    .c-bvyfdZ-eIIZQy-cv:hover,
-    .c-bvyfdZ-eIIZQy-cv:focus,
-    .c-foJpPP:hover,
-    .c-foJpPP:focus,
-    .c-jYivmg:hover,
-    .c-jYivmg:focus,
-    .c-PJLV-foJpPP-isGif-false:hover,
-    .c-PJLV-foJpPP-isGif-false:focus,
-    .c-gaARkn:hover,
-    .c-bqseKE-fassuZ-isActive-true,
-    .c-bqseKE:hover,
-    .c-hjFsWX:hover {
-        background-color: #1a2230;
-    }
-
-    .c-TZEZD::before {
-        background-color: var(--colors-spidertooth000c);
-    }
-
-    .c-hbaUTP-gmqXFB-warn-true {
-        color: red;
-    }
-
-    article>div.c-kHiOPw>button:nth-child(3)>span:nth-child(1)>img {
-        filter: brightness(5)
-    }
-
-    article>div.c-kHiOPw>button:hover,
-    article>div.c-fIaqhA>div>div.c-ibPCDO>button:hover,
-    span.c-FHWXc-ihaxWh-css:hover {
-        border-radius: 4rem;
-        background-color: var(--colors-spidertooth800c);
-    }
-
-    #__next>main>div>div>div>article>div.c-kHiOPw>button:hover {
-        border-radius: 4rem;
-        background-color: var(--colors-spidertooth700c);
-    }
-
-    .c-cMRplQ {
-        border-bottom: 1px solid var(--colors-spidertooth400c)
-    }
-
-    .c-eSwFRQ {
-        color: var(--colors-spidertooth000c);
-        background-color: var(--colors-spidertooth800c);
-    }
-
-    .c-gkIwjq,
-    .c-gkIwjq:hover,
-    .c-gkIwjq:active {
-        background: var(--colors-spidertooth800c);
-        color: var(--colors-spidertooth000c);
-    }
-
-    .c-FHWXc-zPonf-hierarchy-PRIMARY_LIGHT {
-        background-color: var(--colors-spidertooth800c);
-        color: var(--colors-spidertooth000c);
-    }
-
-    .c-hOvNzj {
-        background-color: var(--colors-spidertooth800c);
-        border-bottom: 0.1rem var(--colors-spidertooth800c) solid;
-    }
-
-    #__next>main>div>div>div>div>div.ptr__children>div:nth-child(2)>div {
-        filter: invert(1) hue-rotate(180deg) contrast(0.5);
-    }
-
-    .c-dnbfWL,
-    .c-eKlmUN {
-        border-bottom: 0.1rem solid var(--colors-spidertooth1000c);
-    }
-
-    li::marker {
-        color: #ffffff;
+    .c-bITVNu {
+        border-radius: 0 0 1.5rem 1.5rem;
     }
 }
+
+@media only screen and (min-width: 1135px) {
+    #__next>main>div>div>div>div.c-gHVokN {
+        top: 13.5rem;
+        max-width: 1135px;
+    }
+
+    #__next>main>div>div>div>div.c-gHVokN>div>div.c-cwekIR {
+        flex-direction: column;
+        max-width: 200px;
+        border-radius: 1.5rem;
+    }
+
+    #__next>main>div>div>div>div.c-gHVokN>div.c-ioOOaa {
+        margin-right: -350px;
+    }
+
+    #__next>main>div>div>div>div.c-gHVokN.c-gHVokN-fXbMiE-isOutOfView-true {
+        transform: translate(-50%, 0)
+    }
+
+    #__next>main>div>div>div>div.ptr {
+        margin-top: -18.5rem;
+    }
+
+    #__next>main>div>div>div>div>div.ptr__children {
+        margin-top: 20rem;
+    }
+}
+
+article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
+    stroke: var(--colors-lifespirit400);
+    fill: var(--colors-lifespirit400);
+    color: var(--colors-lifespirit400);
+}
+
+.c-bVhrlL {
+    z-index: 999;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    color: var(--text);
+}
+
+.inner-content {
+    padding-top: 20px;
+}
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border-radius: 1.5rem;
+    max-width: 545px;
+    height: 550px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.a-set {
+    position: fixed;
+    top: 7.6rem;
+    right: 1.6rem;
+    z-index: 999;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+  }
+  label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: #688ffc;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  input:checked + label {
+    background-color: #000;
+  }
+  input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  label:active:after {
+    width: 45px;
+  }
 `;
 
 document.head.appendChild(style);
