@@ -32,6 +32,8 @@ window.onload = function () {
         bgs: getStyle(html, "--colors-spidertooth000c"),
         text: getStyle(html, "--text"),
         invert: getStyle(html, "--invert"),
+        a: getStyle(html, "--a"),
+        white: getStyle(html, "--white"),
     }
     const darkMode = {
         bg: "#000000",
@@ -39,7 +41,9 @@ window.onload = function () {
         bgh: "#1a2230",
         text: "#ffffff",
         bgs: "#000000",
-        invert: "invert(1)",
+        invert: "invert(1) brightness(255)",
+        a: "var(--colors-lifespirit150c)",
+        white: "#ffffff"
     }
     const transformKey = key =>
         "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
@@ -89,7 +93,7 @@ document.body.appendChild(settings_btn);
 const settings_modal = document.createElement('div');
 settings_modal.setAttribute("class", "a-modal modal");
 settings_modal.setAttribute("id", "a-modal")
-settings_modal.innerHTML = '<div class="modal-content"><a class="close">&times;</a><div class="inner-content"><h3>Accessibility settings</h3><div class="toggle">Dark Mode <input id="switch" type="checkbox" name="theme"><label for="switch">Dark Mode Toggle</label></div><br><div class="toggle">High Contrast Mode (coming soon) <input disabled id="switch-c" type="checkbox" name="contrast"><label for="switch-c">High Contrast Toggle</label></div><br><div class="toggle">Greyscale Mode (coming soon) <input disabled id="switch-g" type="checkbox" name="grey"><label for="switch-g">Greyscale Toggle</label></div></div></div>'
+settings_modal.innerHTML = '<div class="modal-content"><a class="close">&times;</a><div class="inner-content"><h3>Accessibility settings</h3><div class="toggle">Dark Mode <input class="access-switch" id="switch" type="checkbox" name="theme"><label class="access-label" for="switch">Dark Mode Toggle</label></div><br><div class="toggle">High Contrast Mode (coming soon) <input disabled class="access-switch" id="switch-c" type="checkbox" name="contrast"><label class="access-label" for="switch-c">High Contrast Toggle</label></div><br><div class="toggle">Greyscale Mode (coming soon) <input disabled class="access-switch" id="switch-g" type="checkbox" name="grey"><label class="access-label" for="switch-g">Greyscale Toggle</label></div></div></div>'
 
 document.body.appendChild(settings_modal);
 
@@ -113,9 +117,19 @@ html {
     --bgh: #f7f7f8;
     --text: #000000;
     --invert: inherit;
+    --a: inherit;
+    --white: inherit;
   }
 
-  #__next > header > div > ul > li.c-ibzkWc > div > div > span:nth-child(1) > button > span > img {
+  a, a:hover, a:focus, a:active {
+    color: var(--a);
+  }
+
+  #__next > header > div > ul > li.c-ibzkWc > div > div > span:nth-child(1) > button > span > img,
+  #__next > header > div > ul > li.c-eBYgRj > a > div > span > img,
+  #home_2KDkawirFru02kve3JYs82s7pQM > article > div.c-kHiOPw > button:nth-child(3) > span > img,
+  #__next > header > div > div > ul > div > div > span:nth-child(1) > button > span > img,
+  #__next > main > div > div > div > div > div.ptr__children > article > div.c-kHiOPw > button:nth-child(3) > span:nth-child(1) > img {
     filter: var(--invert);
   }
 
@@ -130,7 +144,9 @@ html {
   .c-jvqXaZ,
   .c-ehkLfE-ihZJXZy-css,
   .c-dcltaJ-gKdpob-type-FULL_HEIGHT,
-  .c-iQreDs  {
+  .c-iQreDs,
+  .c-eSwFRQ,
+  .c-lkZNlx {
     background-color: var(--bg)!important;
   }
 
@@ -228,7 +244,11 @@ html {
     .c-jaySyu,
     .modal-content,
     #__next>main>div>div>div>div.c-gHVokN>div>div.c-cwekIR {
-        background: var(--bga)
+        background: var(--bga);
+    }
+
+    .c-eSwFRQ {
+        color: var(--white);
     }
 
 .c-bdPRaD {
@@ -350,12 +370,12 @@ article>div.c-kHiOPw>button.c-bdPRaD.c-bdPRaD-eGcsjJ-liked-true>svg {
     z-index: 999;
 }
 
-input[type=checkbox]{
+.access-switch {
     height: 0;
     width: 0;
     visibility: hidden;
   }
-  label {
+  .access-label {
     cursor: pointer;
     text-indent: -9999px;
     width: 52px;
@@ -365,7 +385,7 @@ input[type=checkbox]{
     border-radius: 100px;
     position: relative;
   }
-  label::after{
+  .access-label::after{
     content: '';
     position: absolute;
     top: 3px;
@@ -376,15 +396,25 @@ input[type=checkbox]{
     border-radius: 90px;
     transition: 0.3s;
   }
-  input:checked + label {
+  .access-switch:checked + .access-label {
     background-color: #000;
   }
-  input:checked + label::after {
+  .access-switch:checked + .access-label::after {
     left: calc(100% - 5px);
     transform: translateX(-100%);
   }
-  label:active:after {
+  .access-label:active:after {
     width: 45px;
+  }
+  .c-bVhrlL {
+    align-items: center;
+    background-color: var(--colors-lifespirit300c);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 6.4rem;
+    justify-content: center;
+    width: 6.4rem;
   }
 `;
 
