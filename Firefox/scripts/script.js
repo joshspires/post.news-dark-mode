@@ -31,6 +31,7 @@ window.onload = function () {
         bgh: getStyle(html, "--bgh"),
         bgs: getStyle(html, "--colors-spidertooth000c"),
         text: getStyle(html, "--text"),
+        invert: getStyle(html, "--invert"),
     }
     const darkMode = {
         bg: "#000000",
@@ -38,6 +39,7 @@ window.onload = function () {
         bgh: "#1a2230",
         text: "#ffffff",
         bgs: "#000000",
+        invert: "invert(1)",
     }
     const transformKey = key =>
         "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
@@ -110,6 +112,11 @@ html {
     --bga: #ffffff;
     --bgh: #f7f7f8;
     --text: #000000;
+    --invert: inherit;
+  }
+
+  #__next > header > div > ul > li.c-ibzkWc > div > div > span:nth-child(1) > button > span > img {
+    filter: var(--invert);
   }
 
   body, .c-dVvJMv,
