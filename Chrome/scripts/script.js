@@ -32,6 +32,7 @@ window.onload = function () {
         bgs: getStyle(html, "--colors-spidertooth000c"),
         text: getStyle(html, "--text"),
         invert: getStyle(html, "--invert"),
+        comment: getStyle(html, "--comment"),
         a: getStyle(html, "--a"),
         white: getStyle(html, "--white"),
     }
@@ -42,6 +43,7 @@ window.onload = function () {
         text: "#ffffff",
         bgs: "#000000",
         invert: "invert(1) brightness(255)",
+        comment: "invert(1) brightness(0.9) hue-rotate(179deg)",
         a: "var(--colors-lifespirit150c)",
         white: "#ffffff"
     }
@@ -117,8 +119,13 @@ html {
     --bgh: #f7f7f8;
     --text: #000000;
     --invert: inherit;
+    --comment: inherit;
     --a: inherit;
     --white: inherit;
+  }
+
+  div[data-spotim-module] {
+    filter: var(--comment);
   }
 
   a, a:hover, a:focus, a:active {
