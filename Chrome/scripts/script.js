@@ -139,7 +139,7 @@ html {
   }
 
   a, a:hover, a:focus, a:active {
-    color: var(--a);
+    color: var(--a)!important;
   }
 
   .c-FHWXc-iypSxu-hierarchy-SECONDARY {
