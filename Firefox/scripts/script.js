@@ -45,7 +45,7 @@ window.onload = function () {
         invert: "invert(1) brightness(255)",
         comment: "invert(1) brightness(0.9) hue-rotate(179deg)",
         a: "var(--colors-lifespirit150c)",
-        white: "#ffffff"
+        white: "#ffffff",
     }
     const transformKey = key =>
         "--" + key.replace(/([A-Z])/, "-$1").toLowerCase();
@@ -122,6 +122,16 @@ html {
     --comment: inherit;
     --a: inherit;
     --white: inherit;
+    --black: inherit;
+  }
+
+  .c-jfWlDS {
+    fill: var(--bg);
+    stroke: var(--bg); 
+  }
+
+  .c-dJGw-ibfYWt-css {
+    border-color: var(--bga)
   }
 
   div[data-spotim-module] {
@@ -129,14 +139,21 @@ html {
   }
 
   a, a:hover, a:focus, a:active {
-    color: var(--a);
+    color: var(--a)!important;
+  }
+
+  .c-FHWXc-iypSxu-hierarchy-SECONDARY {
+    color: var(--white);
+    border-color: var(--white);
   }
 
   #__next > header > div > ul > li.c-ibzkWc > div > div > span:nth-child(1) > button > span > img,
   #__next > header > div > ul > li.c-eBYgRj > a > div > span > img,
   #home_2KDkawirFru02kve3JYs82s7pQM > article > div.c-kHiOPw > button:nth-child(3) > span > img,
   #__next > header > div > div > ul > div > div > span:nth-child(1) > button > span > img,
-  #__next > main > div > div > div > div > div.ptr__children > article > div.c-kHiOPw > button:nth-child(3) > span:nth-child(1) > img {
+  #__next > main > div > div > div > div > div.ptr__children > article > div.c-kHiOPw > button:nth-child(3) > span:nth-child(1) > img,
+  article > div.c-kHiOPw > button:nth-child(3) > span:nth-child(1) > img,
+  #__next > main > div > div > div > div.ptr__children > div.c-fSoVva > div.c-jaySyu > div.c-iNeJhE > div.c-jpYNHp > button > span > img {
     filter: var(--invert);
   }
 
@@ -254,7 +271,7 @@ html {
         background: var(--bga);
     }
 
-    .c-eSwFRQ {
+    .c-eSwFRQ, .c-cqFmmL, .c-jnGYto-djWwnA-activeTab-true {
         color: var(--white);
     }
 
